@@ -1,0 +1,51 @@
+public class Conta {
+
+	private double saldo;
+	int agencia;
+	int conta;
+	Cliente titular;
+
+	public void depositar(double valor) {
+		if (valor > 0) {
+			this.saldo += valor;
+			System.out.println("Foi depositado R$" + valor + "!");
+		}
+		
+	}
+	
+	public boolean sacar(double valor) {
+		if (this.saldo >= valor && valor > 0) {
+			this.saldo -= valor;
+			System.out.println("Foi sacado R$" + valor + "!");
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public boolean transfere(Conta contaDestino, double valor) {
+		if (this.sacar(valor)) {
+			contaDestino.depositar(valor);
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public double getSaldo () {
+		return this.saldo;
+	}
+	
+	public void setAgencia(int novaAgencia) {
+		if (this.agencia == 0 && novaAgencia > 0) {
+			this.agencia = novaAgencia;
+		}
+	}
+	
+	public void setConta(int novaConta) {
+		if (this.conta == 0 && novaConta > 0) {
+			this.conta = novaConta;
+		}
+	}
+	
+}

@@ -1,0 +1,15 @@
+
+public class ProgramaCondicionais {
+
+	public static void main(String[] args) {
+		
+		int idade = 29;
+		
+		if (idade >= 18) {
+			System.out.println("Ta vei já!");			
+		}
+		
+		
+	}
+	
+}

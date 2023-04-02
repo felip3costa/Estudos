@@ -1,0 +1,18 @@
+package geek;
+
+// Variables
+
+//
+
+public class Programa1 {
+
+	public static void main(String[] args) {
+		
+		String newValue;
+		int num1, num2=0, num3;
+		char caractere;
+		float price = 10.34f; // float are double values in Java
+
+	}
+
+}

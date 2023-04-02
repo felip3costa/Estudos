@@ -1,0 +1,22 @@
+
+public class TestesBanco {
+
+	public static void main(String[] args) {
+				
+		Conta contaFelipe = new Conta();
+		
+		contaFelipe.depositar(5000);
+		Cliente felipe = new Cliente();
+		contaFelipe.setTitular(felipe);
+		
+		contaFelipe.getTitular().setNome("Felipe");
+		contaFelipe.getTitular().setCPF("123.456.789-00");
+		contaFelipe.getTitular().setProfissao("desenvolvedor");
+		
+		contaFelipe.depositar(500);
+		
+		System.out.println(contaFelipe.getTitular().getNome());
+		
+	}
+	
+}

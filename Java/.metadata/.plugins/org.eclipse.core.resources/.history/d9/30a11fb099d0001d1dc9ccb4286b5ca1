@@ -1,0 +1,21 @@
+package bytebank;
+
+public class Movimentacao {
+
+	private static void depositar(Conta conta, double valor) {
+		if (valor > 0) {
+			conta.saldo += valor;
+		}
+		return;
+		
+	}
+	
+	private static void sacar(Conta conta, double valor) {
+		if (valor > 0 && (conta.saldo - valor > 0)) {
+			conta.saldo -= valor;
+		}
+		return;
+		
+	}
+	
+}

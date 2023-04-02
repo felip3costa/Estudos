@@ -1,0 +1,16 @@
+
+public class ProgramaWhile {
+	
+	private static void functionWhile(int limite) {
+		int contador = 0;
+		while (contador <= limite) {
+			System.out.println(contador);
+			contador ++;
+		}
+	}
+
+	public static void main(String[] args) {
+		functionWhile(10);
+	}
+	
+}

@@ -1,0 +1,11 @@
+package geek;
+
+public class Programa1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Geek University");
+
+	}
+
+}

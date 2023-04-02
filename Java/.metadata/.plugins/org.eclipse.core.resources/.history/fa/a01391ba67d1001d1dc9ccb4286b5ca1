@@ -1,0 +1,9 @@
+
+public class ContaCorrente extends Conta{
+	private int tipo = 1;
+
+	public ContaCorrente(int agencia, int conta)  {
+		super(agencia, conta);
+	}
+	
+}

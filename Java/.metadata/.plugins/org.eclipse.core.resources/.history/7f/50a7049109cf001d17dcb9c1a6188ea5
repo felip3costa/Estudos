@@ -1,0 +1,25 @@
+
+public class Programa01 {
+
+	public static void main(String[] args) {
+		
+		String newValue;
+		int num1, num2=0, num3;
+		char caractere;
+		float price = 10.34f; // float are double values in Java
+		double priceByDouble = 10.34; // double variable dont need to put 'f' 
+		
+		
+		int firstValueInt, secondValueInt;
+		
+		firstValueInt = 5;
+		secondValueInt = 8;
+		
+		System.out.println(firstValueInt + secondValueInt);
+		System.out.println(firstValueInt - secondValueInt);
+		System.out.println(firstValueInt * secondValueInt);
+		System.out.println(firstValueInt / secondValueInt);
+		
+	}
+
+}

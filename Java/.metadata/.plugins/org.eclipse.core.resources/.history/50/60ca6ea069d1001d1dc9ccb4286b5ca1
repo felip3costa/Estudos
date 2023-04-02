@@ -1,0 +1,14 @@
+
+public class ContaCorrente extends Conta{
+	private String tipo = "Corrente";
+
+	public ContaCorrente(int agencia, int conta)  {
+		super(agencia, conta);
+	}
+	
+	
+	public String getTipo() {
+		return tipo;
+	}
+	
+}

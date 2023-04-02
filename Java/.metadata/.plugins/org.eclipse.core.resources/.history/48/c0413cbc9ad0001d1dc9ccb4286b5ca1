@@ -1,0 +1,24 @@
+package bytebank;
+
+public class CriaConta {
+	
+
+
+	public static void main(String[] args) {
+		Conta primeiraConta = new Conta();
+		
+		primeiraConta.saldo = 200;
+		
+		System.out.println(primeiraConta.saldo);
+		Movimentacao.depositar(primeiraConta, 100);
+
+		System.out.println(primeiraConta.saldo);
+		
+		Movimentacao.sacar(primeiraConta, 55.39);
+
+
+		System.out.println(primeiraConta.saldo);
+			
+	}
+
+}

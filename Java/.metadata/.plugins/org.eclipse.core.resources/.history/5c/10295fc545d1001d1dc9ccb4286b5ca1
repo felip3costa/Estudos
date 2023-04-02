@@ -1,0 +1,17 @@
+
+public class TesteReferencias {
+
+	public static void main(String[] args) {
+		Gerente g1 = new Gerente("Felipe", "123456", 6000);
+		Gerente f1 = new Gerente("Felipe", "123456", 2000);
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		
+		controle.registra(g1);
+		controle.registra(f1);
+		
+		controle.getSoma()
+		
+	}
+	
+}

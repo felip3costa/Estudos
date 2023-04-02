@@ -1,0 +1,19 @@
+package geek;
+
+// Variables
+
+public class Programa1 {
+
+	public static void main(String[] args) {
+		
+		String newValue;
+		
+		int num1, num2, num3;
+		
+		newValue = "Print Teste";
+		
+		System.out.println(newValue);
+
+	}
+
+}

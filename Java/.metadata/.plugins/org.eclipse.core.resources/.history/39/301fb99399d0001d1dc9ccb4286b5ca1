@@ -1,0 +1,38 @@
+package bytebank;
+
+public class CriaConta {
+	
+	private static void depositar(Conta conta, double valor) {
+		if (valor > 0) {
+			conta.saldo += valor;
+		}
+		return;
+		
+	}
+	
+	private static void sacar(Conta conta, double valor) {
+		if (valor > 0 && (conta.saldo - valor > 0)) {
+			conta.saldo -= valor;
+		}
+		return;
+		
+	}
+
+	public static void main(String[] args) {
+		Conta primeiraConta = new Conta();
+		
+		primeiraConta.saldo = 200;
+		
+		System.out.println(primeiraConta.saldo);
+		depositar(primeiraConta, 100);
+
+		System.out.println(primeiraConta.saldo);
+		
+		sacar(primeiraConta, 55.39);
+
+
+		System.out.println(primeiraConta.saldo);
+			
+	}
+
+}

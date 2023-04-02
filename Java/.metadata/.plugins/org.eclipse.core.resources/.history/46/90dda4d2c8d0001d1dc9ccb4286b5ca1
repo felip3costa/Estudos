@@ -1,0 +1,21 @@
+
+public class TestesBanco {
+
+	public static void main(String[] args) {
+				
+		
+		Cliente felipe = new Cliente();
+		Conta contaFelipe = new Conta(1234, -33550, felipe);
+		
+		Cliente daniela = new Cliente();
+		Conta contaDaniela = new Conta(1234, -33550, daniela);
+		
+		Cliente marli = new Cliente();
+		Conta contaMarli = new Conta(1234, -33550, marli);
+
+		System.out.println(Conta.getTotal());
+		
+		
+	}
+	
+}

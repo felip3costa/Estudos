@@ -1,0 +1,18 @@
+
+public class TestesBanco {
+
+	public static void main(String[] args) {
+				
+		Conta contaFelipe = new Conta();
+		
+		contaFelipe.depositar(5000);
+		contaFelipe.titular = new Cliente();
+		contaFelipe.titular.nome = "Felipe";
+		contaFelipe.titular.CPF = "123.456.789-00";
+		contaFelipe.titular.profissao = "desenvolvedor";
+		
+		System.out.println(contaFelipe.titular.profissao);
+		
+	}
+	
+}
