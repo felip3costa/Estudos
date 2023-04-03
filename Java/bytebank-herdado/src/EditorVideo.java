@@ -8,7 +8,7 @@ public class EditorVideo extends Funcionario {
 	
 	public double getBonificacao() {
 		System.out.println("Chamou no Editor");
-		return super.getBonificacao() + 100;
+		return 100;
 	}
 
 }

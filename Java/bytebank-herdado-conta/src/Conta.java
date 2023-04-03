@@ -1,6 +1,6 @@
-public class Conta {
+public abstract class Conta {
 
-	private double saldo;
+	protected double saldo;
 	private int agencia;
 	private int conta;
 	private Cliente titular;

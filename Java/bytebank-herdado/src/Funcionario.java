@@ -1,4 +1,6 @@
-public class Funcionario {	
+
+//classe abstrata não pode ser instanciada, apenas as filhas.
+public abstract class Funcionario {	
 	
 	private String nome;
 	private String cpf;
@@ -18,16 +20,8 @@ public class Funcionario {
 		
 	}
 	
-	
-	public double getBonificacao() {
-//		System.out.println("Chamou no Funcionario");
-		double bonificacao = 0.10;
-		if (this.salario > 0) {
-			return this.salario * bonificacao;
-		}
-		return 0;
-	}
-	
+	// método abstrato é quando só o filho tem implementação.
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;

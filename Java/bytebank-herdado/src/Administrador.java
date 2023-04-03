@@ -1,16 +1,15 @@
 
-public class Gerente extends Funcionario implements Autenticacao{
+public class Administrador extends Funcionario implements Autenticacao{
 	
 	private AutenticacaoUtil auth;
 	
-	public Gerente(String nome, String cpf, double salario) {
+	public Administrador(String nome, String cpf, double salario) {
 		super(nome, cpf, salario);
 		this.auth = new AutenticacaoUtil();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public double getBonificacao() {
-		System.out.println("Chamou no Gerente");
+		System.out.println("Chamou no Adm");
 		return super.getSalario();
 	}
 
